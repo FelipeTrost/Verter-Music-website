@@ -1,0 +1,142 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* transition: top 0.8s ease; */
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-back{
+    top: 50%;
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    height: 50%;
+    background-color: rgba(9,10,20, .7);
+    color: white;
+    bottom: -100%;
+    z-index: 1;
+  }
+  
+  .flip-card img{
+    width:100%;height:100%;
+  }
+  
+  /* ------ */
+  /* POPUP */
+  /* ------ */
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    /* transition: opacity 500ms; */
+    z-index: 6;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    /* transition: all 5s ease-in-out; */
+    z-index: 7;
+    color: black;
+  }
+  
+  .popup h3 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup p {
+    margin-top: 0;
+    display: inline;
+    font-size: 16px;
+    color:grey;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    /* transition: all 200ms; */
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+    padding: 20px;
+  }
+  .popup .content img{
+    height: 350px;
+    width: 350px;
+    display: block;
+    margin: 10px auto;
+  }
+  .popup .content .duration{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    text-align: left;
+    font-size: 16px;
+    color: grey;
+  }
+  .popup .logos{
+    width: 90%;
+    margin: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+  
