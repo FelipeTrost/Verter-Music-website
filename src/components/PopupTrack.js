@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fa } from '@fortawesome/free-brands-svg-icons'
 
 const PopupTrack = ({track, close}) =>{
 
@@ -13,7 +11,7 @@ const PopupTrack = ({track, close}) =>{
         const controller = new AbortController();
         const signal = controller.signal;
 
-        fetch(track.tracklist, {signal})
+        fetch('https://cors-anywhere.herokuapp.com/'+track.tracklist, {signal})
         .then(r => r.json())
         .then(r => setSongs(r.data))
 

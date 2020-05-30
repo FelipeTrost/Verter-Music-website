@@ -17,7 +17,7 @@ const App = () => {
   const [tracks, setTracks] = useState(false)
 
   useEffect(()=>{
-    fetch('https://api.deezer.com/artist/14379707/albums')
+    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/14379707/albums', {mode: 'cors'})
     .then(r => r.json())
     .then(response => setTracks(response.data))
     .catch(err => alert('Error al cargar albumes.'))
