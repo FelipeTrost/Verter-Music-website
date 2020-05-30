@@ -38,7 +38,7 @@ const PopupTrack = ({track, close}) =>{
 
             <div className="content">
                 <img src={track.cover_big} />
-
+                <br />
                 {songs && (
                     <>
                     <h4>Songs:</h4>
@@ -49,7 +49,6 @@ const PopupTrack = ({track, close}) =>{
                             </li>
                         ))}
                     </ul>
-                    <br />
                     </>
                 )}
                 <a href={track.link} target="_blank">Listen to it on Deezer</a>
