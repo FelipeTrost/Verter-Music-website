@@ -51,9 +51,9 @@ const PopupTrack = ({track, close}) =>{
                             </li>
                         ))}
                     </ul>
+                    <br />
                     </>
                 )}
-                <br />
                 <a href={track.link} target="_blank">Listen to it on Deezer</a>
             
             </div>
