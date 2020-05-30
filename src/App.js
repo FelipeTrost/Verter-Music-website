@@ -1,4 +1,4 @@
-import React, { useState, createRef, forwardRef, useRef } from 'react';
+import React, { useState, createRef, forwardRef, useRef, useEffect } from 'react';
 import logo from './images/logo.png';
 
 import './App.css';
@@ -9,10 +9,19 @@ import SideNav from './components/SideNav'
 import Releases from './components/Releases';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faSpinner } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faSpotify, faApple, faGooglePlay, faSoundcloud } from '@fortawesome/free-brands-svg-icons'
 
+const App = () => {
 
-const App = ({tracks}) => {
+  const [tracks, setTracks] = useState(false)
+
+  useEffect(()=>{
+    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/14379707/albums')
+    .then(r => r.json())
+    .then(response => setTracks(response.data))
+    .catch(err => alert('Error al cargar albumes.'))
+  }, [])
 
   const [sideNav, setSideNav] = useState(false)
   const [popup, setPopup] = useState(false)
@@ -22,19 +31,16 @@ const App = ({tracks}) => {
   const whereTo = useRef()
 
   const handleMenuSelection = (id)=>{
-    console.log(id);
     switch (id) {
       case 0: //ABOUT ME
-        aboutMe.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        aboutMe.current.scrollIntoView({ behavior: 'smooth'})
         break;
       case 1: //RELEASES
-        releases.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        releases.current.scrollIntoView({ behavior: 'smooth'})
         break;
       case 2: //WHERE TO FIND ME
-        whereTo.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        whereTo.current.scrollIntoView({ behavior: 'smooth'})
         break;
-      default:
-
     }
   }
 
@@ -71,17 +77,36 @@ const App = ({tracks}) => {
       </div>
       <br></br>
 
-      <Releases tracks={tracks} trackSelected={trackSelected} reference={releases} />
+      <div className="section" ref={releases}>
+        <h1 className="titel">RELEASES</h1>
+        <div className="releases">
+          {!tracks?(
+            <FontAwesomeIcon icon={faSpinner} spin={true} className='spinner' />
+          ):(
+            <Releases tracks={tracks} trackSelected={trackSelected} />
+          )}
+        </div>
+      </div>
 
       <div className="section" ref={whereTo} >
           <h1>WHERE TO FIND ME</h1>
           <div className="logos">
-            <a target="_blank" href="https://instagram.com/verter_music"><i className="fab fa-instagram"></i></a>
-            <a target="_blank" href="https://open.spotify.com/artist/6H8wsbtJTIAsvbKysRvVFO?si=68wVdV44RdCBUzx3LfZAcA"><i className="fab fa-spotify"></i></a>
-            <a target="_blank" href="https://music.apple.com/us/artist/verter-music/1360898688"><i className="fab fa-apple"></i></a>
+            <a target="_blank" href="https://instagram.com/verter_music">
+              <FontAwesomeIcon icon={faInstagram}/>
+            </a>
+            <a target="_blank" href="https://open.spotify.com/artist/6H8wsbtJTIAsvbKysRvVFO?si=68wVdV44RdCBUzx3LfZAcA">
+              <FontAwesomeIcon icon={faSpotify}/>
+            </a>
+            <a target="_blank" href="https://music.apple.com/us/artist/verter-music/1360898688">
+              <FontAwesomeIcon icon={faApple}/>
+            </a>
 
-            <a target="_blank" href="https://play.google.com/store/music/artist/Verter_Music?id=At3s3lycrhahb7cwgjw5niptfn4"><i className="fab fa-google-play"></i></a>
-            <a target="_blank" href="https://soundcloud.com/the_verter"><i className="fab fa-soundcloud"></i></a>
+            <a target="_blank" href="https://play.google.com/store/music/artist/Verter_Music?id=At3s3lycrhahb7cwgjw5niptfn4">
+              <FontAwesomeIcon icon={faGooglePlay}/>
+            </a>
+            <a target="_blank" href="https://soundcloud.com/the_verter">
+              <FontAwesomeIcon icon={faSoundcloud}/>
+            </a>
           </div>
         </div>
 
