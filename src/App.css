@@ -102,7 +102,7 @@ body{
   color: grey;
   font-size: 50px;
   /* transition: color .2s ease; */
-  margin: 10px 5px;
+  margin: 10px;
 }
 .logos a:hover{color: white;}
 .popup .logos a:hover{color: black;}
@@ -116,7 +116,11 @@ body{
   
   width:100%;
 }
-.flip-card{margin: 30px;}
+.flip-card{
+  margin: 30px;
+  width: 200px;
+  height: 200px;
+}
 
 footer{
   background-color: rgb(30,30,30);
@@ -127,8 +131,34 @@ footer{
 }
 footer div{
   width: 50%;
+  min-width: 100px;
   padding: 40px;
   color: white;
   font-size: 20px;
   text-align: center;
+}
+@media only screen and (max-width: 700px) {
+  footer div{
+    width: 100%;
+  }
+  .releases{
+    justify-content: space-between;
+  }
+  .flip-card{
+    position: relative;
+    margin: 20px 0;
+    width: 45%;
+    height: auto;
+  }
+  .flip-card .dummy{
+    margin-bottom: 100%;
+  }
+  .flip-card .content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
 }
