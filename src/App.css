@@ -57,11 +57,12 @@ body{
   color: #06D85F;
 }
 .menuBar{
-  padding: 16px;
+  padding: 35px;
+  font-size: 20px;
 }
 
 .logo{
-  width: 10%;
+  width: 40%;
   max-width: 200px;
   display: block;
   margin: 20px auto;
@@ -106,18 +107,16 @@ body{
 .logos a:hover{color: white;}
 .popup .logos a:hover{color: black;}
 
-.flip-card{margin: 25px auto;}
 .releases{
   display: flex;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-
-  align-items: center;
-
+  justify-content: center;
+  
   width:100%;
 }
+.flip-card{margin: 30px;}
 
 footer{
   background-color: rgb(30,30,30);

@@ -13,7 +13,7 @@ const PopupTrack = ({track, close}) =>{
         const controller = new AbortController();
         const signal = controller.signal;
 
-        fetch('https://cors-anywhere.herokuapp.com/'+track.tracklist, {signal})
+        fetch(track.tracklist, {signal})
         .then(r => r.json())
         .then(r => setSongs(r.data))
 
