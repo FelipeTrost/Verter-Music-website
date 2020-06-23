@@ -114,13 +114,6 @@
     overflow: auto;
     padding: 20px;
   }
-  .popup .content img{
-    width: 	90%;
-    max-width: 350px;
-    max-height: 350px;
-    display: block;
-    margin: 20px auto;
-  }
   .popup .content .duration{
     display: block;
     margin-left: auto;

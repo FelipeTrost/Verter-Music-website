@@ -89,7 +89,21 @@ body{
 .popup a:hover{
   text-decoration: underline;
 }
-
+.popup .content .canvas{
+  width: 	90%;
+  display: block;
+  margin: 20px 0;
+}
+.popup .content #canvas img{
+  max-width: 350px;
+  max-height: 350px;
+  display: block;
+  margin: auto;
+}
+.popup .content #canvas canvas{
+  display: block;
+  margin: auto;
+}
 
 .logos{
   display: flex;
