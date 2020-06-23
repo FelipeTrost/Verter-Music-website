@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Verter-Music-website/static/css/main.79f2ab62.chunk.css",
-    "main.js": "/Verter-Music-website/static/js/main.a9a60f3d.chunk.js",
-    "main.js.map": "/Verter-Music-website/static/js/main.a9a60f3d.chunk.js.map",
+    "main.js": "/Verter-Music-website/static/js/main.ff07de11.chunk.js",
+    "main.js.map": "/Verter-Music-website/static/js/main.ff07de11.chunk.js.map",
     "runtime-main.js": "/Verter-Music-website/static/js/runtime-main.4a1f7bea.js",
     "runtime-main.js.map": "/Verter-Music-website/static/js/runtime-main.4a1f7bea.js.map",
     "static/js/2.d1120b81.chunk.js": "/Verter-Music-website/static/js/2.d1120b81.chunk.js",
     "static/js/2.d1120b81.chunk.js.map": "/Verter-Music-website/static/js/2.d1120b81.chunk.js.map",
     "index.html": "/Verter-Music-website/index.html",
-    "precache-manifest.e8ccc497b09653588082a2220de628dc.js": "/Verter-Music-website/precache-manifest.e8ccc497b09653588082a2220de628dc.js",
+    "precache-manifest.e5248cd06c3f10ddf2e636306bdd6f63.js": "/Verter-Music-website/precache-manifest.e5248cd06c3f10ddf2e636306bdd6f63.js",
     "service-worker.js": "/Verter-Music-website/service-worker.js",
     "static/css/main.79f2ab62.chunk.css.map": "/Verter-Music-website/static/css/main.79f2ab62.chunk.css.map",
     "static/js/2.d1120b81.chunk.js.LICENSE.txt": "/Verter-Music-website/static/js/2.d1120b81.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.4a1f7bea.js",
     "static/js/2.d1120b81.chunk.js",
     "static/css/main.79f2ab62.chunk.css",
-    "static/js/main.a9a60f3d.chunk.js"
+    "static/js/main.ff07de11.chunk.js"
   ]
 }
