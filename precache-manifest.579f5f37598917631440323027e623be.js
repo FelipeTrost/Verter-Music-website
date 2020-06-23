@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "791ee676e6adbd75494dca5101f7d416",
+    "revision": "9458c61fe123948419a95d0aa589b538",
     "url": "/Verter-Music-website/index.html"
   },
   {
-    "revision": "029fb2bb97838805f780",
-    "url": "/Verter-Music-website/static/css/main.79f2ab62.chunk.css"
+    "revision": "aefb1197991bd6d53bd9",
+    "url": "/Verter-Music-website/static/css/main.4cd79479.chunk.css"
   },
   {
     "revision": "4417eefe0dcbd4312fd7",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Verter-Music-website/static/js/2.d1120b81.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "029fb2bb97838805f780",
-    "url": "/Verter-Music-website/static/js/main.ff07de11.chunk.js"
+    "revision": "aefb1197991bd6d53bd9",
+    "url": "/Verter-Music-website/static/js/main.a8bd4ab2.chunk.js"
   },
   {
     "revision": "2e500bd27b9c3bce0792",
