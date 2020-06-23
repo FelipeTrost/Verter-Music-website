@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Verter-Music-website/precache-manifest.c6d05d0200dbd776e9f1dbc0809da25b.js"
+  "/Verter-Music-website/precache-manifest.6dad62ca8a6cc144e66722838c51cf8d.js"
 );
 
 self.addEventListener('message', (event) => {

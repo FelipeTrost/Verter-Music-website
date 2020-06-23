@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Verter-Music-website/static/css/main.bd3f3ae4.chunk.css",
-    "main.js": "/Verter-Music-website/static/js/main.54deac0c.chunk.js",
-    "main.js.map": "/Verter-Music-website/static/js/main.54deac0c.chunk.js.map",
+    "main.css": "/Verter-Music-website/static/css/main.223fa29b.chunk.css",
+    "main.js": "/Verter-Music-website/static/js/main.8a6aa66c.chunk.js",
+    "main.js.map": "/Verter-Music-website/static/js/main.8a6aa66c.chunk.js.map",
     "runtime-main.js": "/Verter-Music-website/static/js/runtime-main.4a1f7bea.js",
     "runtime-main.js.map": "/Verter-Music-website/static/js/runtime-main.4a1f7bea.js.map",
-    "static/js/2.089a969e.chunk.js": "/Verter-Music-website/static/js/2.089a969e.chunk.js",
-    "static/js/2.089a969e.chunk.js.map": "/Verter-Music-website/static/js/2.089a969e.chunk.js.map",
+    "static/js/2.6c076e8b.chunk.js": "/Verter-Music-website/static/js/2.6c076e8b.chunk.js",
+    "static/js/2.6c076e8b.chunk.js.map": "/Verter-Music-website/static/js/2.6c076e8b.chunk.js.map",
     "index.html": "/Verter-Music-website/index.html",
-    "precache-manifest.c6d05d0200dbd776e9f1dbc0809da25b.js": "/Verter-Music-website/precache-manifest.c6d05d0200dbd776e9f1dbc0809da25b.js",
+    "precache-manifest.6dad62ca8a6cc144e66722838c51cf8d.js": "/Verter-Music-website/precache-manifest.6dad62ca8a6cc144e66722838c51cf8d.js",
     "service-worker.js": "/Verter-Music-website/service-worker.js",
-    "static/css/main.bd3f3ae4.chunk.css.map": "/Verter-Music-website/static/css/main.bd3f3ae4.chunk.css.map",
-    "static/js/2.089a969e.chunk.js.LICENSE.txt": "/Verter-Music-website/static/js/2.089a969e.chunk.js.LICENSE.txt",
+    "static/css/main.223fa29b.chunk.css.map": "/Verter-Music-website/static/css/main.223fa29b.chunk.css.map",
+    "static/js/2.6c076e8b.chunk.js.LICENSE.txt": "/Verter-Music-website/static/js/2.6c076e8b.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/Verter-Music-website/static/media/logo.922ab98c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4a1f7bea.js",
-    "static/js/2.089a969e.chunk.js",
-    "static/css/main.bd3f3ae4.chunk.css",
-    "static/js/main.54deac0c.chunk.js"
+    "static/js/2.6c076e8b.chunk.js",
+    "static/css/main.223fa29b.chunk.css",
+    "static/js/main.8a6aa66c.chunk.js"
   ]
 }
